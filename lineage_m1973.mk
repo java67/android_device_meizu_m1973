@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
+#Credits to XiNGRZ
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
@@ -22,13 +22,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from m1973 device
 $(call inherit-product, device/meizu/m1973/device.mk)
 
-# Inherit some common MoKee stuff.
-$(call inherit-product, vendor/mokee/config/common_full_phone.mk)
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.mk.maintainer=XiNGRZ
-
-PRODUCT_NAME := mokee_m1973
+PRODUCT_NAME := lineage_m1973
 PRODUCT_BRAND := meizu
 PRODUCT_DEVICE := m1973
 PRODUCT_MANUFACTURER := meizu

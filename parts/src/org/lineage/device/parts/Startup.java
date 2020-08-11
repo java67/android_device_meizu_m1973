@@ -5,14 +5,14 @@
  *
  */
 
-package org.mokee.device.parts;
+package org.lineage.device.parts;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.os.UserHandle;
 
-import static mokee.content.Intent.ACTION_INITIALIZE_MK_HARDWARE;
+import static lineage.content.Intent.ACTION_INITIALIZE_MK_HARDWARE;
 
 public class Startup extends BroadcastReceiver {
 
